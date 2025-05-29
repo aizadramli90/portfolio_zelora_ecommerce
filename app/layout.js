@@ -48,8 +48,23 @@ export default function RootLayout({ children }) {
               <EmailInput />
             </div>
             <div className="link-container">
-              <h3>Aizadramli</h3>
-              <Link></Link>
+              <div>
+                <h3>Aizadramli</h3>
+                <a href={"https://github.com/aizadramli90"} className="style">
+                  Aizad's Ramli Github
+                </a>
+                <a href={"https://github.com/aizadramli90"}>Roadmap</a>
+              </div>
+              <div>
+                <h3>Zelora</h3>
+                <Link href={"/home"}>Home</Link>
+                <Link href={"/cart"}>Cart</Link>
+              </div>
+              <div>
+                <h3>Support</h3>
+                <Link href={"/contact"}>Contact</Link>
+                <Link href={"/home"}>FAQ</Link>
+              </div>
             </div>
             <div className="socials"></div>
           </footer>
