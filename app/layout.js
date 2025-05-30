@@ -57,16 +57,41 @@ export default function RootLayout({ children }) {
               </div>
               <div>
                 <h3>Zelora</h3>
-                <Link href={"/home"}>Home</Link>
+                <Link href={"/"}>Home</Link>
                 <Link href={"/cart"}>Cart</Link>
               </div>
               <div>
                 <h3>Support</h3>
                 <Link href={"/contact"}>Contact</Link>
-                <Link href={"/home"}>FAQ</Link>
+                <Link href={"/"}>FAQ</Link>
               </div>
             </div>
-            <div className="socials"></div>
+            <div className="socials">
+              <p>
+                ©
+                <a href="https://aizadramli.com" target="_blank">
+                  Aizad Ramli
+                </a>{" "}
+                2025 <br /> Built with Next.js
+              </p>
+              <div className="social-links">
+                <Link href={"https://github.com/aizadramli90"} target="_blank">
+                  <i className="fa-brands fa-github"></i>
+                </Link>
+                <Link
+                  href={"https://www.facebook.com/aizadauditore/"}
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-facebook"></i>
+                </Link>
+                <Link
+                  href={"https://www.youtube.com/@aizadramli"}
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-youtube"></i>
+                </Link>
+              </div>
+            </div>
           </footer>
         </div>
       </body>
