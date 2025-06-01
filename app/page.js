@@ -1,12 +1,15 @@
 //const breaker = {};
 
+import ImageBanner from "@/components/ImageBanner";
+import Products from "@/components/Products";
+
 export default function Home() {
   return (
-    <div>
-      {/* {hello.map((val) => {
-        return <div></div>;
-      })} */}
-      Homepage
-    </div>
+    <>
+      <ImageBanner />
+      <section>
+        <Products />
+      </section>
+    </>
   );
 }
