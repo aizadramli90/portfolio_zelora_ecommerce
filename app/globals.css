@@ -153,6 +153,10 @@ footer .link-container > div {
   font-size: 3rem;
 }
 
+.fa-cart-plus {
+  color: green;
+}
+
 /* break points */
 @media (min-width: 640px) {
   .header-content {

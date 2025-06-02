@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 // useRef to keep track of particular elements and then we can look at its status :is the image is completely loaded?
 // declare a variable imgRef and set it to useRef()
@@ -9,8 +9,14 @@ import { useState, useRef } from "react";
 // set the opacity dynamically if the image is loaded or not.
 
 function ImageBanner() {
-  const { isLoaded, setIsLoaded } = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const imgRef = useRef();
+
+  useEffect(() => {
+    if (imgRef.current.complete) {
+      setIsLoaded(true);
+    }
+  }, []);
 
   return (
     <div className="banner-images">
@@ -23,7 +29,7 @@ function ImageBanner() {
         src="low_res/banner.jpeg"
         alt="banner-low-res"
       />
-      "
+
       <img
         ref={imgRef}
         className="high-res-img"
@@ -32,6 +38,7 @@ function ImageBanner() {
         style={{ opacity: isLoaded ? 1 : 0 }}
         onLoad={() => {
           // when the high-res image is completely loaded, this function will be executed and the intention is to take this initally invisible image and make it visible
+          setIsLoaded(true);
         }}
       />
       <div className="cta-btns-container">
