@@ -9,7 +9,7 @@ export default function Error(props) {
     console.log(error);
   }, [error]);
   return (
-    <div>
+    <div className="page-container">
       <h3>Something went wrong</h3>
       <div>
         <button onClick={reset}>Reset</button>

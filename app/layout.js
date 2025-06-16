@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
               <Link href="/">
                 <h1>Zelora</h1>
               </Link>
-              <h4 className="mid-text">Honest shopping, happy living</h4>
+              <h4 className="mid-text">Gear Up, Code Better!</h4>
               <Cart />
             </div>
           </header>

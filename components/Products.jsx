@@ -63,10 +63,10 @@ export default function Products() {
           </div>
           <div className="planner-info">
             <p className="text-large planner-header">
-              Medieval Dragon And Knight Monthly Planner
+              Dragon And Knight Monthly Planner
             </p>
             <h3>
-              <span>$</span>10.99
+              <span>$</span>20.99
             </h3>
             <p className="text-large planner-header">
               A beautifully designed monthly planner featuring a medieval dragon
@@ -120,7 +120,7 @@ export default function Products() {
                   </p>
                   <p>{stickerDescriptions[sticker]}</p>
                   <h4>
-                    <span>$</span>4.99
+                    <span>RM</span>3.00
                   </h4>
                   <button>
                     <i className="fa-solid fa-cart-plus"></i> Add to cart
