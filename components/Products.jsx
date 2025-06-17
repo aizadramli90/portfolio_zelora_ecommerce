@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Portal from "./Portal";
 
-export default function Products() {
+export default function Products(props) {
+  const { planner, stickers } = props;
   const [portalImage, setPortalImage] = useState(null);
   const stickerDescriptions = {
     CSS_HTML_Javascript:
